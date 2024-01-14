@@ -1,16 +1,20 @@
 import { Routes, Route } from 'react-router-dom';
 
-import { PATH } from '@constants/common';
+import { PATH } from '@constants/paths';
 
 /**
  * components
  */
-import { Main } from '@pages/Main';
+import { MainPage } from '@pages/Main';
+import { CommunityPage } from '@pages/Community';
+import { CrewsPage } from '@pages/Crews';
 
 const Router = () => {
   return (
     <Routes>
-      <Route path={PATH.root} index element={<Main />} />
+      <Route index path={PATH.root} element={<MainPage />} />
+      <Route path={PATH.community} element={<CommunityPage />} />
+      <Route path={PATH.crews} element={<CrewsPage />} />
     </Routes>
   );
 };
