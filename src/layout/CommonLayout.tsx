@@ -1,5 +1,4 @@
 import React, { ReactNode } from 'react';
-import { HeaderLayout } from './HeaderLayout';
 import { ContentsLayout } from './ContentsLayout';
 import { FooterLayout } from './FooterLayout';
 
@@ -11,7 +10,6 @@ const CommonLayout = (props: LayoutProps) => {
   const { children } = props;
   return (
     <>
-      <HeaderLayout />
       <ContentsLayout>{children}</ContentsLayout>
       <FooterLayout />
     </>

@@ -1,7 +1,11 @@
-import React from 'react';
+import * as S from './style';
 
 const FooterLayout = () => {
-  return <div>FooterLayout</div>;
+  return (
+    <S.Wrapper>
+      <div className="container">Footer</div>
+    </S.Wrapper>
+  );
 };
 
 export default FooterLayout;
