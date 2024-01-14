@@ -1,6 +1,6 @@
 build/
 
-packages/client/public/
+public/
 
 # lock file
-pnpm-lock.yaml
+yarn.lock
