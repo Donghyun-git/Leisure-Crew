@@ -1,4 +1,4 @@
-# 레저크루(LeisureCrew)
+# onSquad(온스쿼드)
 
 ## client
 
