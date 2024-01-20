@@ -1,12 +1,12 @@
 import { useLocation } from 'react-router-dom';
-import { usePageMove } from '@hooks/usePageMove';
-import { ROOT_PATH } from '@constants/paths';
+// import { usePageMove } from '@hooks/usePageMove';
+// import { ROOT_PATH } from '@constants/paths';
 
 import * as S from './style';
 
 const HeaderLayout = () => {
   const location = useLocation();
-  const { handlePageMove } = usePageMove();
+  // const { handlePageMove } = usePageMove();
 
   const pathname = location.pathname;
   const splitPath = pathname.split('/');
@@ -16,8 +16,8 @@ const HeaderLayout = () => {
     <S.Wrapper $currentPath={currentPath}>
       <div className="container">
         <div className="header__left">
-          <img src="#" alt="logo" />
-          <ul>
+          <img src="/icons/onsquad_logo.svg" alt="logo" />
+          {/* <ul>
             <li onClick={() => handlePageMove(ROOT_PATH.main)}>
               <span>홈</span>
             </li>
@@ -27,9 +27,9 @@ const HeaderLayout = () => {
             <li onClick={() => handlePageMove(ROOT_PATH.crews)}>
               <span>크루들</span>
             </li>
-          </ul>
+          </ul> */}
         </div>
-        <div className="header__right">
+        {/* <div className="header__right">
           <ul>
             <li>
               <span>로그인</span>
@@ -41,7 +41,7 @@ const HeaderLayout = () => {
               <button>크루 모집</button>
             </li>
           </ul>
-        </div>
+        </div> */}
       </div>
     </S.Wrapper>
   );

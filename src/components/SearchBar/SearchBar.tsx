@@ -35,8 +35,8 @@ const SearchBar = () => {
         style={{ display: searchInput !== '' ? 'none' : 'block' }}
       >
         <p>
-          "어떤 활동"
-          <span>을 하고 싶으세요?</span>
+          "찾으시는 크루"
+          <span>가 있나요?</span>
         </p>
       </div>
     </S.Wrapper>

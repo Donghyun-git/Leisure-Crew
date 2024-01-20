@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   position: relative;
-  height: 76px;
+  height: 5rem;
 
   display: flex;
   align-items: center;
@@ -27,10 +27,10 @@ export const Wrapper = styled.div`
       border: 1px solid rgb(233, 233, 233);
       border-radius: 20px;
       box-shadow: rgba(25, 25, 25, 0.35) 0px 4px 20px 0px;
-      caret-color: var(--green-400);
+      caret-color: var(--orange-400);
 
       &:focus {
-        outline: 2px solid var(--green-400);
+        outline: 2px solid var(--orange-400);
       }
     }
   }

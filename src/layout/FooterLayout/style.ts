@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
   background-color: var(--gray-400);
 
   & .container {
-    width: 1200px;
+    width: 67.5rem;
     margin: 0 auto;
     padding: 0 10px;
     height: 200px;

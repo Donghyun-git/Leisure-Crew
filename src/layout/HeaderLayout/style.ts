@@ -16,7 +16,7 @@ export const Wrapper = styled.header<PathProps>`
   background-color: var(--white);
 
   & .container {
-    width: 1200px;
+    width: 1080px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;

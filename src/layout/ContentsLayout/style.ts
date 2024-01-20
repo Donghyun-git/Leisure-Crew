@@ -5,23 +5,22 @@ export const Wrapper = styled.section`
   width: 100%;
 
   & .container {
-    width: 1200px;
+    width: 1080px;
     min-height: 800px;
     margin: 60px auto 0 auto;
-    padding: 0 10px;
   }
 `;
 
 export const SlideWrapper = styled.div`
   position: relative;
-  width: 1200px;
-  height: 600px;
+  width: 100%;
+  height: 10rem;
   margin: 80px auto 0 auto;
 
   & .search__wrapper {
     position: absolute;
-    bottom: -6%;
-    left: 25%;
+    bottom: -24%;
+    left: 30%;
     z-index: 10000;
   }
 `;

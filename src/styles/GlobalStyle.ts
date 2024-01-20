@@ -31,6 +31,12 @@ ${reset}
   --gray-500: #767676;
   --gray-400: #D9D9D9;
 
+
+  --orange-700: #BF5000;
+  --orange-600: #E66000;
+  --orange-500: #FF6B00;
+  --orange-400: #FF974D;
+
   /**
     placeholder
   */
@@ -41,7 +47,7 @@ ${reset}
   box-sizing: border-box;
 }
 html {
-  font-size: 62.5%;
+  font-size: 16px;
   /* rem 값의 기준을 잡기 위함 16px -> 10px */
   font-family: 'Noto Sans KR', sans-serif;
 }
