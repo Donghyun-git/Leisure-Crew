@@ -1,11 +1,5 @@
-// styles/TabMenu.js
 import styled from '@emotion/styled';
 import { NavLink } from 'react-router-dom';
-
-type TabLinkPropsType = {
-  exact?: boolean;
-  activeClassName: '' | 'active';
-};
 
 export const TabMenuContainer = styled.div`
   width: 73%;
@@ -21,17 +15,30 @@ export const TabMenuContainer = styled.div`
   z-index: 10;
 `;
 
-export const TabLink = styled(NavLink)<TabLinkPropsType>`
+export const TabLink = styled(NavLink)`
   flex-grow: 1;
   text-align: center;
   padding: 12px 0;
   text-decoration: none;
   color: black;
   width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.3rem;
+
+  > span {
+    font-size: 0.78rem;
+    color: var(--gray-100);
+  }
 
   &.active {
     background-color: var(--orange-500);
-    color: var(--white);
     border-radius: 24rem;
+
+    > span {
+      color: var(--white);
+    }
   }
 `;
