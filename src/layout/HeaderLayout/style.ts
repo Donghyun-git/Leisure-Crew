@@ -2,24 +2,24 @@ import styled from 'styled-components';
 
 type PathProps = {
   $currentPath: string;
+  $headerShown: boolean;
 };
 
 export const Wrapper = styled.header<PathProps>`
-  position: fixed;
-  z-index: 1000;
-  top: 0px;
-  left: 0px;
   width: 100%;
   height: 80px;
   display: flex;
   align-items: center;
   background-color: var(--white);
+  box-shadow: ${({ $headerShown }) =>
+    $headerShown ? '' : '0px 0px 8px 0px rgba(0, 0, 0, 0.15)'};
 
   & .container {
-    width: 1080px;
+    width: 70.5rem;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: ${({ $headerShown }) =>
+      $headerShown ? 'space-between' : 'flex-start'};
     align-items: center;
 
     & .header__left {
@@ -28,13 +28,14 @@ export const Wrapper = styled.header<PathProps>`
       padding: 0 10px;
 
       & img {
-        /* width: 300px;
-        height: 200px; */
+        cursor: pointer;
       }
 
       & ul {
         display: flex;
         align-items: center;
+        margin-top: 4px;
+        margin-left: 12px;
 
         & li {
           margin: 0px 13px;
@@ -111,12 +112,23 @@ export const Wrapper = styled.header<PathProps>`
               width: 1px;
               height: 16px;
               background-color: var(--gray-500);
-              top: -1px;
+              top: 4px;
               right: 0;
             }
           }
         }
       }
+    }
+
+    & .header__title {
+      color: var(--black);
+      text-align: center;
+      font-family: Pretendard;
+      font-size: 1.25rem;
+      font-weight: 700;
+      line-height: 1.25rem;
+      margin: 0 auto;
+      padding-right: 4%;
     }
   }
 `;

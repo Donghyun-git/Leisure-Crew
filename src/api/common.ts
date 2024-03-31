@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseURL = import.meta.env.API_URL;
+const baseURL = import.meta.env.VITE_APP_API_URL;
 
 export const apiFetch = axios.create({
   baseURL,
@@ -10,5 +10,7 @@ export const apiFetch = axios.create({
 });
 
 apiFetch.interceptors.request.use((config) => {
+  console.log('baseurl', baseURL);
+  console.log(config);
   return config;
 });

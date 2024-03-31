@@ -16,10 +16,10 @@ const SearchBar = () => {
 
   return (
     <S.Wrapper>
-      <div className="search__icon">
-        <img src="/icons/search.svg" alt="검색 아이콘" />
-      </div>
       <div className="search__area">
+        <div className="search__icon">
+          <img src="/icons/search.svg" alt="검색 아이콘" />
+        </div>
         <span>
           <input
             ref={searchRef}
@@ -28,16 +28,16 @@ const SearchBar = () => {
             onChange={(e) => handleInputChange(e.target.value)}
           />
         </span>
-      </div>
-      <div
-        className="search__caption"
-        onClick={handleInputFocus}
-        style={{ display: searchInput !== '' ? 'none' : 'block' }}
-      >
-        <p>
-          "찾으시는 크루"
-          <span>가 있나요?</span>
-        </p>
+        <div
+          className="search__caption"
+          onClick={handleInputFocus}
+          style={{ display: searchInput !== '' ? 'none' : 'block' }}
+        >
+          <p>
+            "크루를"
+            <span> 검색해보세요.</span>
+          </p>
+        </div>
       </div>
     </S.Wrapper>
   );

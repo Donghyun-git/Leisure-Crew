@@ -27,9 +27,12 @@ ${reset}
   --aqua-300: #00FFF5;
   --aqua-200: #00FFFF;
 
+  --gray-800: #2A2A2A;
   --gray-700: #444444;
   --gray-500: #767676;
   --gray-400: #D9D9D9;
+  --gray-200: #f0f1f2;
+  --gray-100: #d9d9d9;
 
 
   --orange-700: #BF5000;
@@ -52,8 +55,10 @@ html {
   font-family: 'Noto Sans KR', sans-serif;
 }
 body {
-  margin: 0;
+  margin: 0 !important;
   letter-spacing: -0.5px;
+  background: var(--gray-light, #f0f1f2) !important;
+
 }
 input, textarea { 
   -moz-user-select: auto;

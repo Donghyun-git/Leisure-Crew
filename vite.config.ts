@@ -7,6 +7,12 @@ export default defineConfig({
   server: {
     host: '0.0.0.0',
     port: 7070,
+    proxy: {
+      '/api': {
+        target: 'http://172.30.1.81:8080/',
+        changeOrigin: true,
+      },
+    },
   },
   build: {
     outDir: 'build',
@@ -44,6 +50,10 @@ export default defineConfig({
       {
         find: '@constants',
         replacement: resolve(__dirname, 'src', 'constants'),
+      },
+      {
+        find: '@layout',
+        replacement: resolve(__dirname, 'src', 'layout'),
       },
     ],
   },

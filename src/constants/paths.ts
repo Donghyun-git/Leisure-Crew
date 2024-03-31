@@ -14,4 +14,6 @@ export const ROOT_PATH = {
   main: '' as const,
   community: 'community' as const,
   crews: 'crews' as const,
+  login: 'login' as const,
+  join: 'join' as const,
 };

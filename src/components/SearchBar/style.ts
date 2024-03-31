@@ -5,14 +5,19 @@ export const Wrapper = styled.div`
   height: 5rem;
 
   display: flex;
+  justify-content: center;
   align-items: center;
+
+  margin-top: -2rem;
 
   & .search__icon {
     position: absolute;
-    left: 20px;
+    left: 0.9rem;
+    top: 1.4rem;
   }
 
   & .search__area {
+    position: relative;
     & input {
       display: flex;
       -webkit-box-align: center;
@@ -37,7 +42,7 @@ export const Wrapper = styled.div`
 
   & .search__caption {
     position: absolute;
-    top: 36%;
+    top: 1.4rem;
     left: 10%;
     cursor: text;
 

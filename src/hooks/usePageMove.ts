@@ -17,7 +17,15 @@ export const usePageMove = () => {
 
   const handlePageMove = (path: PathParams) => {
     navigate(`${PATH.root}${path}`);
+
+    return;
   };
 
-  return { handlePageMove };
+  const handlePagePrevious = () => {
+    navigate(-1);
+
+    return;
+  };
+
+  return { handlePageMove, handlePagePrevious };
 };
